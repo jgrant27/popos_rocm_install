@@ -11,7 +11,7 @@ wget -qO - http://repo.radeon.com/rocm/apt/debian/rocm.gpg.key | sudo apt-key ad
 echo 'deb [arch=amd64] http://repo.radeon.com/rocm/apt/debian/ xenial main' | sudo tee /etc/apt/sources.list.d/rocm.list
 
 # Install the libs
-sudo apt install -y rocm-libs rocm-dev miopen-opencl rocm-opencl-dev rocm-utils cxlactivitylogger
+sudo apt install -y rocm-libs rocm-dev miopen-opencl opencl-dev rocm-opencl-dev rocm-utils cxlactivitylogger
 
 # Add yourself to video group
 sudo usermod -a -G video $LOGNAME
